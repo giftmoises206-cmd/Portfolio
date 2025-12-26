@@ -1,0 +1,424 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #111;
+    color: #eeecf1;
+    opacity: 0;
+    filter: blur(10px);
+    animation: blur 1.3s ease-in-out forwards;
+}
+@keyframes blur {
+    0%{opacity: 0;
+    filter: blur(10px);}
+    100%{opacity: 1;
+    filter: blur(0);}
+}
+h2.title{
+    color: #eeecf1;
+    font-size: 38px;
+    text-align: center;
+}
+h2.title span{
+    color: #504ed1;
+}
+
+/*   CABEÇALHO */
+header {
+    background: #111;
+    color: #f3e7e7;
+    padding: 40px 0;
+    text-align: center;
+}
+/* MENU*/
+nav {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: sticky;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    transition: transform 0.3s ease;
+}
+nav ul:hover {
+    transform: translateY(10px);
+}
+
+nav a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/*Botao*/
+.cv {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    border: 2px solid #00b4ff80;
+    padding: 12px 18px;
+    border-radius: 14px;
+    background: #0f0f0f;
+    color: #ffffff;
+    text-decoration: none;
+    margin-top: 25px;
+    font-size: 17px;
+    box-shadow: 0 0 10px #00b4ff25;
+    transition: 0.3s ease;
+}
+
+/* Ícone */
+.cv i {
+    font-size: 22px;
+    color: #00b4ff;
+    transition: 0.3s;
+}
+
+/* Texto */
+.cv span {
+    opacity: 0.85;
+    transition: 0.3s;
+}
+
+/* Hover igual ao contacto */
+.cv:hover i {
+    transform: translateX(4px);
+    color: #00c8ff;
+    text-shadow: 0 0 8px #00b4ff;
+}
+
+.cv-box:hover span {
+    opacity: 1;
+}
+
+ /*LOGOTIPO*/
+.logo{
+    color: aqua;
+}
+ .her {
+    margin-top: 60px;
+}
+
+.her h2 span {
+    color: #00b4ff;
+}
+
+
+.lg a{
+    color: white;
+}
+.lg a:hover{
+    color: crimson;
+}
+/* SEÇÕES */
+section {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+.sobre{
+    color: #411375;
+}
+
+#sobre p {
+    color: #f7f2f2;
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+
+/*Imagem*/
+.her-img img {
+    width: 250px;
+    margin-top: 40px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #00b4ff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    animation: float 3s ease-in-out infinite;}
+    @keyframes float {
+        0%{transform:translateY(0)}
+        50%{transform:translateY(-15px)}
+        100%{transform:translateY(0)}
+        
+    }
+
+/* SEÇÕES  Especialidade*/
+section.Especialidades{
+    padding: 40px 4%;
+    
+}
+
+section.Especialidades .flex{
+    gap: 60px;
+    
+}
+.Especialidades .Especialidades-box{
+    color: #eeecf1;
+    padding: 40px;
+    border: 2px solid #fff;
+    margin-top: 50px;
+    border-radius: 25px;
+    transition: 0.2s;
+}
+.Especialidades .Especialidades-box i{
+    font-size: 70px;
+    color: #00b4ff;
+}
+.Especialidades .Especialidades-box h3{
+    margin: 15px 0;
+}
+.Especialidades .Especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #ffffff56;
+}
+    
+/* ==========================
+   SEÇÃO PROJETOS (SEPARADA)
+   ========================== */
+
+.projetos {
+    padding: 30px 4%;
+    margin-top: 50px;
+}
+
+.pro-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    
+    margin-top: 40px;
+}
+
+/* Cartão do Projeto */
+.pro-card {
+    background: #111;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    transition: .3s ease;
+    box-shadow: 0 0 8px #ffffff9f;
+}
+
+/* PÁGINA DE PROJETOS */
+
+.project-page {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.project-page h2 {
+    color: #00b4ff;
+    margin-bottom: 30px;
+}
+
+/* GALERIA COM ROLAGEM */
+.scroll-gallery {
+    max-height: 450px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.scroll-gallery img {
+    width: 100%;
+    border-radius: 15px;
+    border: 3px solid #00b4ff;
+}
+
+.pro-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 12px #ffffffbc;
+}
+
+/* Imagem do projeto */
+.pro-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 2px solid #00b4ff;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.pro-card a img {
+    transition: 0.3s ease;
+}
+
+.pro-card a:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 0 12px #00b4ff;
+
+}
+.pro-link {
+    display: block;
+}
+/* Título */
+.pro-card h3 {
+    margin: 10px 0;
+    color: #00b4ff;
+}
+
+/* Texto */
+.pro-card p {
+    color: #eee;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Animação suave */
+.pro-card {
+    opacity: 0;
+    animation: fadeUp .8s ease forwards;
+}
+
+.pro-card:nth-child(2) { animation-delay: .2s; }
+.pro-card:nth-child(3) { animation-delay: .4s; }
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(15px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* CONTACTOS */
+.contact-style {
+    padding: 50px 4%;
+    max-width: 600px;
+    margin-left: 10%;
+    text-align: left;
+}
+
+.contact-title {
+    font-size: 24px;
+    color: #00b4ff;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: 2px solid #00b4ff80;
+    padding: 12px 18px;
+    border-radius: 14px;
+    width: fit-content;
+    margin-bottom: 35px;
+    background: #0f0f0f;
+    box-shadow: 0 0 10px #00b4ff25;
+}
+
+.contact-title i {
+    font-size: 20px;
+}
+
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    margin-top: 25px;
+}
+
+.c-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.c-item i {
+    font-size: 22px;
+    color: #00b4ff;
+    transition: 0.3s;
+}
+
+.c-item span {
+    color: #ffffff;
+    font-size: 17px;
+    opacity: 0.85;
+}
+
+/* efeito hover suave */
+.c-item:hover i {
+    transform: translateX(4px);
+    color: #00c8ff;
+    text-shadow: 0 0 8px #00b4ff;
+}
+
+.c-item:hover span {
+    opacity: 1;
+}
+
+.footer {
+    margin-top: 80px;
+    padding: 30px 20px;
+    text-align: center;
+    color: #eee;
+   
+    
+    font-size: 14px;
+}
+
+/* ===== SKILLS ===== */
+
+.skills {
+    padding: 40px 4%;
+}
+
+.skills-container {
+    max-width: 700px;
+    margin: 40px auto 0;
+}
+
+.skill {
+    margin-bottom: 30px;
+}
+
+.skill-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.skill-name {
+    font-weight: bold;
+    color: #eeecf1;
+}
+
+.skill-percent {
+    font-size: 14px;
+    color: #00b4ff;
+}
+
+.bar {
+    width: 100%;
+    height: 12px;
+    background: #ffffff25;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.fill {
+    height: 100%;
+    background: #00b4ff;
+    border-radius: 20px;
+}
+
+/* Percentagens */
+.fill.html { width: 80%; }
+.fill.css { width: 70%; }
+.fill.suporte { width: 75%; }
+.fill.eletricidade { width: 65%; }
