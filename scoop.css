@@ -422,3 +422,94 @@ section.Especialidades .flex{
 .fill.css { width: 70%; }
 .fill.suporte { width: 75%; }
 .fill.eletricidade { width: 65%; }
+
+@media (max-width: 768px) {
+
+    /* MENU */
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+
+    nav ul:hover {
+        transform: none;
+    }
+
+    /* HERO */
+    .her h2 {
+        font-size: 24px;
+    }
+
+    .her p {
+        font-size: 15px;
+    }
+
+    .her-img img {
+        width: 180px;
+        height: 180px;
+    }
+
+    /* BOTÃO CV */
+    .cv {
+        font-size: 15px;
+        padding: 10px 14px;
+    }
+
+    /* SEÇÕES */
+    section {
+        margin: 40px auto;
+        padding: 0 15px;
+    }
+
+    /* SKILLS */
+    .skills-container {
+        width: 100%;
+    }
+
+    /* ESPECIALIDADES */
+    section.Especialidades .flex {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .Especialidades .Especialidades-box {
+        padding: 25px;
+    }
+
+    /* PROJETOS */
+    .pro-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .pro-card {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    /* CONTACTOS */
+    .contact-style {
+        margin-left: 0;
+        max-width: 100%;
+        padding: 40px 15px;
+    }
+
+    .contact-title {
+        font-size: 20px;
+    }
+
+    .c-item span {
+        font-size: 15px;
+    }
+
+    /* FOOTER */
+    .footer {
+        font-size: 13px;
+    }
+}
